@@ -8,3 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+
+//mobile 
+
+document.querySelector('.menu-toggle').addEventListener('click', function(event) {
+  event.preventDefault();
+  var menu = document.getElementById('main-nav-wrap');
+  menu.classList.toggle('active');
+});

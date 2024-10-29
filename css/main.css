@@ -326,7 +326,7 @@ body {
 }
 
 .work-experience {
-  width: 60%;
+  width: 80%;
   margin: 20px auto;
   background: white;
   padding: 20px;
@@ -372,10 +372,12 @@ section h2.resumo {
   color: #333;
 }
 #resume {
-  width: 60%;
+  width: 70%;
   margin-top: 100px;
   margin: 30px auto;
-  background: #C0C0C0 url('https://camo.githubusercontent.com/141a4d3b90093a1ead59aad6a0c388bcf946edb091133e532e7200c16234cbe5/68747470733a2f2f63646e2e77616c6c70617065727361666172692e636f6d2f38342f32322f4a7a366241732e676966') no-repeat center top;
+  background-image: url('/images/Nv2.gif');
+  background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
   background-size: cover;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -429,7 +431,7 @@ section h2.resumo {
 
 .skills ul {
   list-style-type: disc;
-  margin-left: 70px;
+  margin-left: -25px;
 }
 
 .skills ul li {
@@ -466,4 +468,117 @@ section h2.resumo {
 .contact-item i {
   font-size: 2em;
   color: #00aced;
+}
+/* Estilo para a palavra "Menu" */
+.menu-toggle {
+  display: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* Esconde o menu principal por padrão em dispositivos móveis */
+#main-nav-wrap {
+  display: block;
+}
+
+.main-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Modo Mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block;
+  }
+
+  #main-nav-wrap {
+      display: none;
+  }
+
+  #main-nav-wrap.active {
+      display: block;
+      background:#333;
+      padding: 10px;
+  }
+
+  .main-navigation li {
+      display: block;
+      margin: 10px 0;
+  }
+
+ 
+    .imgcode {
+      display: none;
+  }
+  
+  .section-intro{
+    margin-left:-150px ;
+  }
+
+  .descnome{
+    color: #222;
+    margin-top: -25px;
+  }
+  .descoutros{
+    color: #222;
+  }
+  .descprof{
+    color: #222;
+   
+  }
+  .descinfo{
+  
+    padding-left: 0px;
+  }
+
+  #resume{
+    width: 110%;
+    margin: 0px;
+  }
+  .work-experience{
+    width: 90%;
+    margin: 0px;
+  }
+  .skills{
+    margin-left: 25px;
+  }
+  .skills ul{
+    margin-left: -20px;
+  }
+  .contact-details {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 8px; /* Espaço entre os itens */
+}
+.contact-item {
+    flex: 1;
+    font-size: 0.9rem; /* Reduz o tamanho da fonte */
+
+    /* Reduz o padding */
+}
+.contact-item h3 {
+    font-size: 1rem; /* Reduz o tamanho do título */
+}
+.contact-item p {
+    font-size: 0.85rem; /* Reduz o tamanho do texto */
+
+}
+
+.contact-item p {
+  white-space: normal;
+  word-break: break-word;  /* Força quebra de linha para texto longo */
+}
 }
